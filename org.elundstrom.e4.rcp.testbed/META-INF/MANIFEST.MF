@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Testbed
+Bundle-SymbolicName: org.elundstrom.e4.rcp.testbed;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Erik Lundstrom
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
