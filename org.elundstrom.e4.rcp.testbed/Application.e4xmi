@@ -56,7 +56,7 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_iv61MFyvEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.todooverview" contributionURI="bundleclass://org.elundstrom.e4.rcp.testbed/org.elundstrom.e4.rcp.testbed.parts.TodoOverviewPart" label="Overview" closeable="true">
       <variables>ResourceBalance</variables>
       <variables>Method</variables>
-      <toolbar xmi:id="_pJx6QFyvEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.toolbar.0"/>
+      <toolbar xmi:id="_pJx6QFyvEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.overview.toolbar"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_J4ArAFywEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.tododetails" contributionURI="bundleclass://org.elundstrom.e4.rcp.testbed/org.elundstrom.e4.rcp.testbed.parts.TodoDetailsPart" label="Details"/>
     <sharedElements xsi:type="basic:Part" xmi:id="_Pxb8gFywEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.playground" contributionURI="bundleclass://org.elundstrom.e4.rcp.testbed/org.elundstrom.e4.rcp.testbed.parts.PlaygroundPart" label="Playground"/>

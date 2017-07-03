@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Testbed Fragment1
+Bundle-SymbolicName: org.elundstrom.e4.rcp.testbed.fragment1;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Erik Lundstrom
+Require-Bundle: org.eclipse.e4.ui.model.workbench;bundle-version="1.2.0.v20160229-1459"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
