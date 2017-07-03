@@ -12,7 +12,19 @@
                name="appName"
                value="Testbed">
          </property>
+         <property
+             name="lifeCycleURI"
+             value="bundleclass://org.elundstrom.e4.rcp.testbed/org.elundstrom.e4.rcp.testbed.internal.lifecycle.E4LifeCycle"/>
       </product>
    </extension>
+   
+   <extension
+      id="MainAppModel"
+      point="org.eclipse.e4.workbench.model">
+      <processor
+      		beforefragment="false"
+            class="org.elundstrom.e4.rcp.testbed.internal.ModelProcessor">
+      </processor>
+	</extension>
 
 </plugin>

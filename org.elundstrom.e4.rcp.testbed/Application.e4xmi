@@ -1,8 +1,76 @@
 <?xml version="1.0" encoding="ASCII"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_az4lAFyqEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.application">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_4Lk3wFyqEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.trimmedwindow.taskmanager" label="Task Manager" x="100" y="100" width="800" height="600">
-    <mainMenu xmi:id="_7OSa0FyqEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.menu.0"/>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_az4lAFyqEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_4Lk3wFyqEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.trimmedwindow.taskmanager" label="elundstrom e4 test bed app" x="100" y="100" width="800" height="600">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_TkZYIFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.perspectivestack">
+      <children xsi:type="advanced:Perspective" xmi:id="_ggQKkFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.perspective.main" label="Main" tooltip="Main perspective (defined in main app)">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_rQEjQFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.mainpersp.partsashcontainer.main" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_5nnQkFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partstack.0">
+            <children xsi:type="advanced:Placeholder" xmi:id="_1n1WYFyvEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.todooverview.ph" ref="_iv61MFyvEeeip7efrIYljw"/>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_7NLgMFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partsashcontainer.0">
+            <children xsi:type="basic:PartStack" xmi:id="_-PfaoFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partstack.1">
+              <children xsi:type="advanced:Placeholder" xmi:id="_UucpEFywEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.tododetails.ph" ref="_J4ArAFywEeeip7efrIYljw"/>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_-ssUAFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partstack.2">
+              <children xsi:type="advanced:Placeholder" xmi:id="_YNwBgFywEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.playground.ph" ref="_Pxb8gFywEeeip7efrIYljw"/>
+            </children>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_-4mNwFzIEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.perspective.second" label="Second" tooltip="Second perspective (defined in main app)">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_F7VQsFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partsashcontainer.second.main">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_UO9HUFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partsashcontainer.1" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_vTdPcFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partstack.4">
+              <children xsi:type="advanced:Placeholder" xmi:id="_x9iQEFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.todooverview.ph" ref="_iv61MFyvEeeip7efrIYljw"/>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_v_DKIFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partstack.5"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_RzrXsFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partstack.3">
+            <children xsi:type="advanced:Placeholder" xmi:id="_gBeTIFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.tododetails.ph" ref="_J4ArAFywEeeip7efrIYljw"/>
+            <children xsi:type="basic:Part" xmi:id="_lSwmkFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.dummypart" label="DummyPart" tooltip="Dummy - no POJO backing up this one" closeable="true"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_7OSa0FyqEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.menu.main">
+      <children xsi:type="menu:Menu" xmi:id="_kvDAEFzKEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.menu.main.file" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="__QisUFzLEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.menu.main.file.save" label="Save" iconURI="platform:/plugin/org.elundstrom.e4.rcp.testbed/icons/save_edit.png" command="_EHJ18FzMEeeip7efrIYljw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_QOKggFzLEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.menu.main.file.quit" label="Quit" command="_hqE9wFzLEeeip7efrIYljw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_meQ68FzKEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.menu.main.edit" label="Edit">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_qvZHAFzMEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.menu.main.edit.dummy" label="Dummy" tooltip="Dummy - not performing anything"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_oRcIwFzKEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.menu.main.window" label="Window">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_9DVYcFzMEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.menu.main.window.reset" label="Reset Perspective" iconURI="platform:/plugin/org.elundstrom.e4.rcp.testbed/icons/ResetPerspective16x16.png" command="_IJ6rUFzNEeeip7efrIYljw"/>
+        <children xsi:type="menu:Menu" xmi:id="_tZj24F_wEeeea-15FwMy4g" elementId="org.elundstrom.e4.rcp.testbed.menu.main.window.switch" label="Switch Perspective" iconURI="platform:/plugin/org.elundstrom.e4.rcp.testbed/icons/arrow-step-over.png">
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_4ShkgF_wEeeea-15FwMy4g" elementId="org.elundstrom.e4.rcp.testbed.handledmenuitem.switchmain" label="Main" command="_Pe2hMF_xEeeea-15FwMy4g">
+            <parameters xmi:id="_AVVkYF_xEeeea-15FwMy4g" elementId="org.elundstrom.e4.rcp.testbed.parameter.0" name="perspective_parameter" value="org.elundstrom.e4.rcp.testbed.perspective.main"/>
+          </children>
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_ykUPEF_xEeeea-15FwMy4g" elementId="org.elundstrom.e4.rcp.testbed.handledmenuitem.switchsecond" label="Second" command="_Pe2hMF_xEeeea-15FwMy4g">
+            <parameters xmi:id="_50f4IF_xEeeea-15FwMy4g" elementId="org.elundstrom.e4.rcp.testbed.parameter.1" name="perspective_parameter" value="org.elundstrom.e4.rcp.testbed.perspective.second"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_olo3IFzKEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.menu.main.help" label="Help"/>
+    </mainMenu>
+    <sharedElements xsi:type="basic:Part" xmi:id="_iv61MFyvEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.todooverview" contributionURI="bundleclass://org.elundstrom.e4.rcp.testbed/org.elundstrom.e4.rcp.testbed.parts.TodoOverviewPart" label="Overview" closeable="true">
+      <variables>ResourceBalance</variables>
+      <variables>Method</variables>
+      <toolbar xmi:id="_pJx6QFyvEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.toolbar.0"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_J4ArAFywEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.tododetails" contributionURI="bundleclass://org.elundstrom.e4.rcp.testbed/org.elundstrom.e4.rcp.testbed.parts.TodoDetailsPart" label="Details"/>
+    <sharedElements xsi:type="basic:Part" xmi:id="_Pxb8gFywEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.playground" contributionURI="bundleclass://org.elundstrom.e4.rcp.testbed/org.elundstrom.e4.rcp.testbed.parts.PlaygroundPart" label="Playground"/>
   </children>
+  <handlers xmi:id="_ksfl4FzLEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.handler.quit" contributionURI="bundleclass://org.elundstrom.e4.rcp.testbed/org.elundstrom.e4.rcp.testbed.handlers.basic.QuitHandler" command="_hqE9wFzLEeeip7efrIYljw"/>
+  <handlers xmi:id="_HZ5ZEFzMEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.handler.save" contributionURI="bundleclass://org.elundstrom.e4.rcp.testbed/org.elundstrom.e4.rcp.testbed.handlers.basic.SaveHandler" command="_EHJ18FzMEeeip7efrIYljw"/>
+  <handlers xmi:id="_K0eNEFzNEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.handler.reset" contributionURI="bundleclass://org.elundstrom.e4.rcp.testbed/org.elundstrom.e4.rcp.testbed.handlers.basic.ResetPerspectiveHandler" command="_IJ6rUFzNEeeip7efrIYljw"/>
+  <handlers xmi:id="_ZMxYAF_xEeeea-15FwMy4g" elementId="org.elundstrom.e4.rcp.testbed.handler.switch" contributionURI="bundleclass://org.elundstrom.e4.rcp.testbed/org.elundstrom.e4.rcp.testbed.handlers.basic.PerspectiveSwitchHandler" command="_Pe2hMF_xEeeea-15FwMy4g"/>
+  <commands xmi:id="_hqE9wFzLEeeip7efrIYljw" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_EHJ18FzMEeeip7efrIYljw" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_IJ6rUFzNEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.command.resetperspective" commandName="Reset Perspective"/>
+  <commands xmi:id="_Pe2hMF_xEeeea-15FwMy4g" elementId="org.elundstrom.e4.rcp.testbed.command.switchperspective" commandName="Switch Perspective">
+    <parameters xmi:id="_UYX04F_xEeeea-15FwMy4g" elementId="perspective_parameter" name="perspective" optional="false"/>
+  </commands>
   <addons xmi:id="_az4lAVyqEeeip7efrIYljw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_az4lAlyqEeeip7efrIYljw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_az4lA1yqEeeip7efrIYljw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
