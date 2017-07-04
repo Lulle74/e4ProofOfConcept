@@ -40,16 +40,16 @@ import org.eclipse.emf.ecore.util.EContentsEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
 /**
- * This is basically a "rip-off" of the org.eclipse.e4.ui.internal.workbench.ModelAssembler. The thing is that we need to "clone" the pristine and thus "default"
- * state of the Application+its fragments. So, I need to specify which MApplication to use in the "processModel" call. If injecting, we will have the running MApplication instead. 
- * 
+ * The ModelAssembler is responsible for adding {@link MModelFragment fragments}
+ * and {@link MApplicationElement} imports to the application model and running
+ * pre- and post-processors on the model.
  */
-@SuppressWarnings( "restriction" )
-public class CustomModelAssembler
+public class ModelAssembler
 {
 	@Inject
 	private Logger logger;
 
+	@Inject
 	private MApplication application;
 
 	@Inject
@@ -77,9 +77,8 @@ public class CustomModelAssembler
 	 * @param initial
 	 *            <code>true</code> if running from a non-persisted state
 	 */
-	public void processModel( boolean initial, MApplication appClone )
+	public void processModel( boolean initial )
 	{
-		this.application = appClone;
 		IExtensionPoint extPoint = registry.getExtensionPoint( extensionPointID );
 		IExtension[] extensions = new ExtensionsSort().sort( extPoint.getExtensions() );
 
@@ -128,7 +127,8 @@ public class CustomModelAssembler
 	 *            doesn't already contain the elements contributed by the
 	 *            fragment before merging them
 	 */
-	private void processFragmentConfigurationElement( IConfigurationElement ce, boolean checkExist )
+	private void processFragmentConfigurationElement( IConfigurationElement ce,
+			boolean checkExist )
 	{
 		/**
 		 * The application elements that were added by the given

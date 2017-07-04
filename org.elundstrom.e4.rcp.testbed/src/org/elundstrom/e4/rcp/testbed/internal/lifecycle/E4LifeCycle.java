@@ -28,31 +28,38 @@ import org.osgi.service.event.EventHandler;
  * <em>org.eclipse.core.runtime.products' extension point</em>) that references
  * this class.
  **/
-@SuppressWarnings("restriction")
-public class E4LifeCycle {
+@SuppressWarnings( "restriction" )
+public class E4LifeCycle
+{
 
 	@PostContextCreate
-	void postContextCreate(final IEventBroker eventBroker, final IEclipseContext workbenchContext) {
-		System.out.println("E4LifeCycle@PostContextCreate: " + workbenchContext + ". Adding an eventhandler for case UILifeCycle.APP_STARTUP_COMPLETE"); //$NON-NLS-1$
+	void postContextCreate( final IEventBroker eventBroker, final IEclipseContext workbenchContext )
+	{
+		System.out.println( "E4LifeCycle@PostContextCreate: " + workbenchContext //$NON-NLS-1$
+				+ ". Adding an eventhandler for case UILifeCycle.APP_STARTUP_COMPLETE" ); 
 
-		eventBroker.subscribe(UIEvents.UILifeCycle.APP_STARTUP_COMPLETE, new EventHandler() {
+		eventBroker.subscribe( UIEvents.UILifeCycle.APP_STARTUP_COMPLETE, new EventHandler() {
 			@Override
-			public void handleEvent(Event event) {
-				System.out.println("E4LifeCycle.handleEvent(): UILifeCycle.APP_STARTUP_COMPLETE. Run PerspectiveFactoryHandler."); //$NON-NLS-1$
+			public void handleEvent( Event event )
+			{
+				System.out.println( "E4LifeCycle.handleEvent(): UILifeCycle.APP_STARTUP_COMPLETE, performing nothing currently." ); //$NON-NLS-1$
+				//System.out.println("E4LifeCycle.handleEvent(): UILifeCycle.APP_STARTUP_COMPLETE. Run PerspectiveFactoryHandler."); //$NON-NLS-1$
 
 				//PerspectiveFactoryHandler handler = ContextInjectionFactory.make(PerspectiveFactoryHandler.class, workbenchContext);
 				//ContextInjectionFactory.invoke(handler, Execute.class, workbenchContext);
 			}
-		});
+		} );
 	}
 
 	@PreSave
-	void preSave(IEclipseContext workbenchContext, MApplication mapp) {
-		System.out.println("E4LifeCycle@PreSave: " + workbenchContext+ ", performing nothing currently."); //$NON-NLS-1$
+	void preSave( IEclipseContext workbenchContext, MApplication mapp )
+	{
+		System.out.println( "E4LifeCycle@PreSave: " + workbenchContext + ", performing nothing currently." ); //$NON-NLS-1$
 	}
 
 	@ProcessAdditions
-	void processAdditions(IEclipseContext workbenchContext, MApplication mapp) {
+	void processAdditions( IEclipseContext workbenchContext, MApplication mapp )
+	{
 		// The window exists by now.
 
 		// Sure, it does, but is not configured with context etc.
@@ -62,23 +69,24 @@ public class E4LifeCycle {
 		// IEclipseContext wContext = window.getContext();
 		// }
 
-		System.out.println("E4LifeCycle@ProcessAdditions: " + workbenchContext + ", performing nothing currently."); //$NON-NLS-1$
+		System.out.println( "E4LifeCycle@ProcessAdditions: " + workbenchContext + ", performing nothing currently." ); //$NON-NLS-1$
 	}
 
 	@ProcessRemovals
-	void processRemovals(IEclipseContext workbenchContext,
+	void processRemovals( IEclipseContext workbenchContext,
 			MApplication application /*
 										 * , @Optional @Named(
 										 * "singleinstance.shutdown") Boolean
 										 * shutdownTheApplication
-										 */ ) {
-		System.out.println("E4LifeCycle@ProcessRemovals: " + workbenchContext + ", performing nothing currently."); //$NON-NLS-1$
+										 */ )
+	{
+		System.out.println( "E4LifeCycle@ProcessRemovals: " + workbenchContext + ", performing nothing currently." ); //$NON-NLS-1$
 
 		boolean shutdown = false;
 		// if ( shutdownTheApplication != null ) {
 		// shutdown = shutdownTheApplication.booleanValue();
 		// }
-		if (shutdown) {
+		if ( shutdown ) {
 			// Not the best solution, but it shuts down the application
 			// Another idea is to use a processor and inject a shutdown handler
 			// that later can be called when a workbench is available

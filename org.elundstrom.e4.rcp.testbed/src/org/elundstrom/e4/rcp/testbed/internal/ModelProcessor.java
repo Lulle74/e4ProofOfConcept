@@ -12,7 +12,8 @@ import org.eclipse.e4.ui.workbench.modeling.EPartService;
 
 /**
  * This processor was used when I was trying out to define both Window and
- * Perspective(s) as "Snippets". Does not seem as a viable way though...
+ * Perspective(s) as "Snippets". Using that approach, there would be no Window when app is running for the first time (i.e. no loading of workbench.xml)). 
+ * I don't think having Window and Perspective(s) defined as "snippets" is a viable way though, so that route is abandoned...
  * 
  */
 public class ModelProcessor {

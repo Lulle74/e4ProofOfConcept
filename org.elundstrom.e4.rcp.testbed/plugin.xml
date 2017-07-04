@@ -18,6 +18,7 @@
       </product>
    </extension>
    
+   <!-- This processor is currently not used. It was a test when the App model was "snippet-based", an approach that has been abandoned. See class desc for more info. 
    <extension
       id="MainAppModel"
       point="org.eclipse.e4.workbench.model">
@@ -25,6 +26,6 @@
       		beforefragment="false"
             class="org.elundstrom.e4.rcp.testbed.internal.ModelProcessor">
       </processor>
-	</extension>
+	</extension>-->
 
 </plugin>

@@ -22,6 +22,6 @@ public class AppModel_IDConstants {
 
 	// For all part ids: same id is used for PartDescriptor, SharedElement,
 	// Placeholder
-	protected static final String PLACEHOLDER_SUFFIX = ".ph";
+	//protected static final String PLACEHOLDER_SUFFIX = ".ph";
 
 }
