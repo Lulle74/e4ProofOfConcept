@@ -5,7 +5,7 @@
       <children xsi:type="advanced:Perspective" xmi:id="_ggQKkFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.perspective.main" label="Main" tooltip="Main perspective (defined in main app)">
         <children xsi:type="basic:PartSashContainer" xmi:id="_rQEjQFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.mainpersp.partsashcontainer.main" horizontal="true">
           <children xsi:type="basic:PartStack" xmi:id="_5nnQkFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partstack.0">
-            <children xsi:type="advanced:Placeholder" xmi:id="_1n1WYFyvEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.todooverview.ph" ref="_iv61MFyvEeeip7efrIYljw"/>
+            <children xsi:type="advanced:Placeholder" xmi:id="_1n1WYFyvEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.todooverview" ref="_iv61MFyvEeeip7efrIYljw"/>
           </children>
           <children xsi:type="basic:PartSashContainer" xmi:id="_7NLgMFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partsashcontainer.0">
             <children xsi:type="basic:PartStack" xmi:id="_-PfaoFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partstack.1">
@@ -21,7 +21,7 @@
         <children xsi:type="basic:PartSashContainer" xmi:id="_F7VQsFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partsashcontainer.second.main">
           <children xsi:type="basic:PartSashContainer" xmi:id="_UO9HUFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partsashcontainer.1" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_vTdPcFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partstack.4">
-              <children xsi:type="advanced:Placeholder" xmi:id="_x9iQEFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.todooverview.ph" ref="_iv61MFyvEeeip7efrIYljw"/>
+              <children xsi:type="advanced:Placeholder" xmi:id="_x9iQEFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.todooverview" ref="_iv61MFyvEeeip7efrIYljw"/>
             </children>
             <children xsi:type="basic:PartStack" xmi:id="_v_DKIFzJEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partstack.5"/>
           </children>
