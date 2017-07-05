@@ -4,10 +4,10 @@
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_TkZYIFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.perspectivestack">
       <children xsi:type="advanced:Perspective" xmi:id="_ggQKkFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.perspective.main" label="Main" tooltip="Main perspective (defined in main app)">
         <children xsi:type="basic:PartSashContainer" xmi:id="_rQEjQFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.mainpersp.partsashcontainer.main" horizontal="true">
-          <children xsi:type="basic:PartStack" xmi:id="_5nnQkFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partstack.0">
+          <children xsi:type="basic:PartStack" xmi:id="_5nnQkFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partstack.0" containerData="30">
             <children xsi:type="advanced:Placeholder" xmi:id="_1n1WYFyvEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.todooverview" ref="_iv61MFyvEeeip7efrIYljw"/>
           </children>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_7NLgMFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partsashcontainer.0">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_7NLgMFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partsashcontainer.0" containerData="70">
             <children xsi:type="basic:PartStack" xmi:id="_-PfaoFytEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.partstack.1">
               <children xsi:type="advanced:Placeholder" xmi:id="_UucpEFywEeeip7efrIYljw" elementId="org.elundstrom.e4.rcp.testbed.part.tododetails.ph" ref="_J4ArAFywEeeip7efrIYljw"/>
             </children>
