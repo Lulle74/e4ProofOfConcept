@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Todo UI Fragment
+Bundle-SymbolicName: org.elundstrom.e4.rcp.testbed.todo.ui.fragment;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Erik Lundstrom
+Require-Bundle: org.eclipse.e4.ui.model.workbench;bundle-version="2.0.0.v20170228-1842",
+ org.eclipse.core.runtime;bundle-version="3.13.0",
+ org.eclipse.swt;bundle-version="3.106.0",
+ org.eclipse.jface;bundle-version="3.13.0",
+ org.eclipse.e4.ui.workbench;bundle-version="1.5.0",
+ org.eclipse.e4.core.di;bundle-version="1.6.100",
+ org.eclipse.e4.core.contexts
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: javax.inject;version="1.0.0",
+ org.elundstrom.e4.rcp.testbed.todo.model

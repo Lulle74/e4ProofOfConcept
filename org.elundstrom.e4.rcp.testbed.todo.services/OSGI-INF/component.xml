@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="ITodoService">
+   <implementation class="org.elundstrom.e4.rcp.testbed.todo.services.internal.MyTodoServiceImpl"/>
+   <service>
+      <provide interface="org.elundstrom.e4.rcp.testbed.todo.model.ITodoService"/>
+   </service>
+</scr:component>

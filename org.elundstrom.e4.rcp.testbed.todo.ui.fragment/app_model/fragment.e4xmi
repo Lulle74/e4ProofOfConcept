@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_-dbwsGfJEeetR63dfIgLaA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_5T1jMGfVEee9PahEJcD5XA" featurename="commands" parentElementId="org.elundstrom.e4.rcp.testbed.application">
+    <elements xsi:type="commands:Command" xmi:id="_8yBhUGfVEee9PahEJcD5XA" elementId="org.elundstrom.e4.rcp.testbed.todo.ui.fragment.command.regeneratetodoservice" commandName="RegenerateTodoService"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_AHiroGfWEee9PahEJcD5XA" featurename="handlers" parentElementId="org.elundstrom.e4.rcp.testbed.application">
+    <elements xsi:type="commands:Handler" xmi:id="_C48cQGfWEee9PahEJcD5XA" elementId="org.elundstrom.e4.rcp.testbed.todo.ui.fragment.handler.0" contributionURI="bundleclass://org.elundstrom.e4.rcp.testbed.todo.ui.fragment/org.elundstrom.e4.rcp.testbed.todo.ui.fragment.handlers.RegenerateTodoServiceHandler" command="_8yBhUGfVEee9PahEJcD5XA"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_RSyGEGfKEeetR63dfIgLaA" featurename="sharedElements" parentElementId="org.elundstrom.e4.rcp.testbed.trimmedwindow.taskmanager">
+    <elements xsi:type="basic:Part" xmi:id="_ik8xcGfKEeetR63dfIgLaA" elementId="org.elundstrom.e4.rcp.testbed.todo.ui.fragment.part.todoview" contributionURI="bundleclass://org.elundstrom.e4.rcp.testbed.todo.ui.fragment/org.elundstrom.e4.rcp.testbed.todo.ui.fragment.parts.TodoListPart" label="TodoView" iconURI="platform:/plugin/org.elundstrom.e4.rcp.testbed.todo.ui.fragment/icons/alarm-clock-blue.png" tooltip="From Todo feature (ui fragment)" closeable="true"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ri4UwGfVEee9PahEJcD5XA" featurename="children" parentElementId="org.elundstrom.e4.rcp.testbed.menu.main">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_w-EyIGfVEee9PahEJcD5XA" elementId="org.elundstrom.e4.rcp.testbed.todo.ui.fragment.handledmenuitem." label="" iconURI="platform:/plugin/org.elundstrom.e4.rcp.testbed.todo.ui.fragment/icons/android.png" tooltip="Regenerate ITodoService" command="_8yBhUGfVEee9PahEJcD5XA"/>
+  </fragments>
+</fragment:ModelFragments>
