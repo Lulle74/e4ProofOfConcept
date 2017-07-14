@@ -16,6 +16,7 @@
 
    <features>
       <feature id="org.elundstrom.e4.rcp.testbed.feature"/>
+      <feature id="org.elundstrom.e4.rcp.testbed.todo.feature"/>
       <feature id="org.eclipse.e4.rcp"/>
       <feature id="org.eclipse.emf.ecore"/>
       <feature id="org.eclipse.emf.common"/>
