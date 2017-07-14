@@ -147,7 +147,8 @@ public class E4LifeCycle
 				wasRestored = restoreLastModified > 0;
 			}
 		}
-
+		
+		wasRestored = false;
 		if ( wasRestored ) {
 			System.out.println( "E4LifeCycle@ProcessRemovals: removing potentially excessive placeholders" );
 
