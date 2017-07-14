@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_Wl0-8GfIEeetR63dfIgLaA">
+  <imports xsi:type="basic:Part" xmi:id="_n7XucGfIEeetR63dfIgLaA" elementId="org.elundstrom.e4.rcp.testbed.fragment1.part.MonkeyView"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_atoh0GfIEeetR63dfIgLaA" featurename="children" parentElementId="org.elundstrom.e4.rcp.testbed.partstack.2">
+    <elements xsi:type="advanced:Placeholder" xmi:id="_gvJYUGfIEeetR63dfIgLaA" elementId="org.elundstrom.e4.rcp.testbed.fragment1.part.MonkeyView.ph" ref="_n7XucGfIEeetR63dfIgLaA"/>
+  </fragments>
+</fragment:ModelFragments>
